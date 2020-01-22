@@ -1,1 +1,48 @@
+The official website for Python
+https://www.python.org/
+ 
+various Python installations 
+https://www.python.org/downloads/
+
+or Anaconda.
+https://docs.anaconda.com/anaconda/install/windows/
+
+To check the version of installed Python
+python --version
+
+PIP: Python package management software written in Python
+can be downloaded from 
+
+pip install pip
+https://pypi.org/project/pip/
+
+The following command will install the latest version of a module and its dependencies from the Python Packaging Index:
+
+python -m pip install SomePackage
+
+python -m pip install --upgrade SomePackage
+
+#Install packages just for the current user
+python -m pip install --uesr
+
+Finding Python Intrepeter:
+/usr/local/bin/python3.8
+
+exit(),quit() and CTRL+D should work for exiting from command promt.
+
+different versions of python
+edit and add in .bash_profile:
+ alias python=python3
+ 
+ My Computer > Properties > Advanced System Settings > Environment Variables >
+ PythonPath
+ C:\Python27
+
+Comments.
+# this is the first comment
+spam = 1  # and this is the second comment
+          # ... and now a third!
+text = "# This is not a comment because it's inside quotes."
+
+Numbers,Strings
 
