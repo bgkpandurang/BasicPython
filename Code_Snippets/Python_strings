@@ -1,48 +1,36 @@
-The official website for Python
-https://www.python.org/
- 
-various Python installations 
-https://www.python.org/downloads/
+# data={'results': [{'geo_location': {'coordinates': [-103.31927, 31.62984], 'type': 'point'}, 'geo_centroid': [[-103.31927, 31.62984]], 'well_common_name': 'LD4347', 'resource_type': 'master-data/Wellbore', 'wellbore_common_name': 'LD434700', 'spud_date': '2008-02-06T18:30:00.000Z', 'srn': 'srn:master-data/Wellbore:LD434700:', 'wp_srn': 'srn:work-product/Wellbore:1575831057849:1', 'current_operator': 'srn:master-data/Organisation:84659:', 'well_srn': 'srn:master-data/Well:LD4347:', 'wellbore_marker_srn': [], 'well_log_srn': [], 'files': [{'filename': 'csv:.424753528200_trajectory-csv-ld4347', 'srn': 'srn:file:file/csv:e27d4d0219ec11ea9d99218ceeb997cd:1'}], 'well_bore_marker_count': 0, 'markers': [], 'well_log_count': 0, 'well_uwi': '4247535282', 'well_uwbi': '424753528200'}], 'total_hits': 1, 'facets': {'resource_type': [{'key': 'master-data/wellbore', 'doc_count': 1}]}, 'start': 0, 'count': 1}
+#
+# print(data['results'][0]['srn'])
+#
 
-or Anaconda.
-https://docs.anaconda.com/anaconda/install/windows/
+message = 'Well come to Boby\'s world'
+# single and double quotes,
+print(message)
+# about Docstring
+''' This is multi line
+comment,used for long descriptions 
+about functions or packages
+'''
+# operaions on String
+# len(message)
+print(message[6:10]) # list slicing
+# String methods
+print(message.lower())
+print(message.count('Well'))
+print(message.count('o'))
+print(message.find('to')) # starts at the 10th index of the message variable
+print(message.replace('world','India'))
+print(message)
+new_message=message.replace('world','India')
+print(new_message)
+greeting = "Hello"
+name = "Boby"
+greetings=greeting+', '+name
+print(greetings)
+print("{0}, {1}".format(greeting,name))
+# to check all methods available in strings
+print(dir(name))
+print(help(str))
+print(help(str.lower))
 
-To check the version of installed Python
-python --version
-
-PIP: Python package management software written in Python
-can be downloaded from 
-
-pip install pip
-https://pypi.org/project/pip/
-
-The following command will install the latest version of a module and its dependencies from the Python Packaging Index:
-
-python -m pip install SomePackage
-
-python -m pip install --upgrade SomePackage
-
-#Install packages just for the current user
-python -m pip install --uesr
-
-Finding Python Intrepeter:
-/usr/local/bin/python3.8
-
-exit(),quit() and CTRL+D should work for exiting from command promt.
-
-different versions of python
-edit and add in .bash_profile:
- alias python=python3
- 
- My Computer > Properties > Advanced System Settings > Environment Variables >
- PythonPath
- C:\Python27
-
-Comments.
-# this is the first comment
-spam = 1  # and this is the second comment
-          # ... and now a third!
-text = "# This is not a comment because it's inside quotes."
-
-Numbers,Strings
 
